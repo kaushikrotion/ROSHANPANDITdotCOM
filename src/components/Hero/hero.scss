@@ -1,0 +1,95 @@
+.hero-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 1;
+
+
+    .image-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .hero-description {
+        position: absolute;
+        z-index: 10;
+        text-align: center;
+        color: white;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    .hero-img-sidebtn{
+        position: absolute;
+        background-color: transparent;
+        bottom: 0;
+        z-index: 15;
+        padding: 1rem;
+        height: 100%;
+        border: none;
+        cursor: pointer;
+        transition: background-color 100ms ease-in-out;
+        &:hover {
+            background-color: rgb(0, 0, 0, 0.1);
+            backdrop-filter: blur(1px);
+            background: linear-gradient(to center, rgba(0, 0, 0.1, 0.7), rgba(0, 0, 0, 0));
+        }
+        & > *{
+            width: 3rem;
+            height: 3rem;
+            stroke: rgba(255, 255, 255, 0.2);
+            
+        }
+        &:hover > * {
+            animation: goforward 200ms ease-in-out;
+        }
+    }
+
+    .bottom-index{
+        position: absolute;
+        bottom: 0.5rem;
+        left: 50%;
+        translate: -50%;
+        display: flex;
+        gap: 1rem;
+        border: none;
+
+        .bottom-index-dotbtn{
+            background-color: transparent;
+            border: 0;
+            z-index: 15;
+            transition: scale 100ms ease-in-out;
+            &>* {
+                    width: 1rem;
+                    height: 1rem;
+                    fill: black;
+                    stroke: rgba(255, 255, 255, 1);
+            }
+            &:hover {
+                scale: 1.4;
+            }
+        }
+    }
+}
+
+@keyframes goforward {
+    50% {
+        scale: 1.4 0.6;
+
+    }
+}

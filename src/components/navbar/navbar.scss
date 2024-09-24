@@ -1,0 +1,35 @@
+    .navbar {
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        display:flex;
+        z-index: 2;
+        justify-content: left;
+        align-items: center;
+        padding: 5px;
+        backdrop-filter: blur(1px);
+        background: linear-gradient(to bottom, rgba(0, 0, 0.1, 0.7), rgba(0, 0, 0, 0));
+
+        img{
+            flex: 0 0 100px;
+            height: 100px;
+        }
+
+        .navbar-links{
+            flex: 1;
+            display: flex;
+            margin-right: 150px;
+            flex-shrink: none;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            font-size: small;
+        }
+    }
+@media screen and (max-width: 700px) {
+    .navbar {
+        backdrop-filter: none;
+        background: none;
+     .navbar-links {display: none;}
+    }
+}
