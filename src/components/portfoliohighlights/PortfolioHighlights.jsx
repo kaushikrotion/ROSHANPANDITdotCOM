@@ -1,5 +1,7 @@
 import React from "react";
 import "./portfoliohighlights.scss"
+import "../photohighlightposter/photohighlightsection.jsx"
+import PhotoHighlightSection from "../photohighlightposter/photohighlightsection.jsx";
 
 const portfolioItems = [
     { title: 'Landscape', image: './Images/NiagraFall-AmericanFall.jpg' },
@@ -14,14 +16,8 @@ export default function PortfolioHighlights(){
         <div className="portfolio-section">
             <h2 className="portfolio-title">PORTFOLIO HIGHLIGHTS</h2>
             <p className="portfolio-subtitle">Emotions that we save for you for many years</p>
-            <div className="portfolio-grid">
-                {portfolioItems.map((item, index) => (
-                    <div className={`portfolio-item portfolio-item-${index}`} key={index}>
-                        <img src={item.image} alt={item.title} />
-                        <div className="portfolio-item-title">{item.title}</div>
-                    </div>
-                ))}
-            </div>
+            <PhotoHighlightSection portfolioItems = {portfolioItems}/>
+
         </div>
     )
 }
