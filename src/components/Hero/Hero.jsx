@@ -62,7 +62,7 @@ const Hero = () => {
             <button onClick={showNextImage} className='hero-img-sidebtn' style={{ right: 0 }}> <CircleChevronRight/> </button>
             <div className='bottom-index'>
                 {images.map((_ , index) => (
-                    <button className = "bottom-index-dotbtn" onClick={() => setCurrentImageIndex(index)}>{index === currentImageIndex ? <CircleDot/> : <Circle />}</button>
+                    <button className="bottom-index-dotbtn" key={index} onClick={() => setCurrentImageIndex(index)}>{index === currentImageIndex ? <CircleDot/> : <Circle />}</button>
                 ))}
             </div>
         </div>

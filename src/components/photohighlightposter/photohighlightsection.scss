@@ -1,15 +1,12 @@
 
 .banner-pic {
     display: grid;
-    
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); // Responsive grid
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: repeat(auto-fill, minmax(320px, 1fr)); // Responsive grid
 
-    .banner-pic {
+    .banner-item-pic {
         position: relative;
         overflow: hidden;
         border-radius: 8px;
@@ -39,7 +36,27 @@
                 background-color: rgba(0, 0, 0, 0.8);
                 
             }
-        
-            } 
+        }
+    } 
+    .last-row-item {
+        &:nth-last-child(2),
+        &:last-child {
+            grid-column: span 3; // When there is one or two items, they will span the whole row
+        }
+
+        &:nth-last-child(2)~&:last-child {
+            grid-column: span 2; // When there are exactly 2 items in the last row, each spans half
+        }
     }
 }
+
+@media screen and (max-width: 700px){
+    .banner-pic {
+        grid-template-columns: 1fr;
+
+        .banner-item-pic{
+            grid-column: span 1 !important;
+        }
+    }
+}
+    

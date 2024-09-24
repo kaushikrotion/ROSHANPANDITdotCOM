@@ -1,6 +1,5 @@
 import React from "react";
 import "./portfoliohighlights.scss"
-import "../photohighlightposter/photohighlightsection.jsx"
 import PhotoHighlightSection from "../photohighlightposter/photohighlightsection.jsx";
 
 const portfolioItems = [
@@ -16,7 +15,7 @@ export default function PortfolioHighlights(){
         <div className="portfolio-section">
             <h2 className="portfolio-title">PORTFOLIO HIGHLIGHTS</h2>
             <p className="portfolio-subtitle">Emotions that we save for you for many years</p>
-            <PhotoHighlightSection portfolioItems = {portfolioItems}/>
+            <PhotoHighlightSection items = {portfolioItems}/>
 
         </div>
     )
