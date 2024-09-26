@@ -20,13 +20,16 @@ const BlogUpdates = () => {
     ];
 
     return (
-        <div className="blog-section">
-            <div className="blog-info">
-                <h2>Blog Updated</h2>
-                <p>For 7 years of work, we have collected many insights about photography, which we will share on our blog.</p>
-                <button className="blog-button">Read the Blog</button>
+        <div>
+            <hr className='line' />
+            <div className="blog-section">
+                <div className="blog-info">
+                    <h2>Blog Updated</h2>
+                    <p>For 7 years of work, we have collected many insights about photography, which we will share on our blog.</p>
+                    <button className="blog-button">Read the Blog</button>
+                </div>
+                <BlogLists blogPosts={blogPosts} />
             </div>
-            <BlogLists blogPosts={blogPosts} />
         </div>
     );
 };

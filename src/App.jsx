@@ -1,4 +1,4 @@
-import "./app.scss"
+import "./App.scss"
 import BlogUpdates from "./components/blogupdates/blogupdates.jsx";
 import Footer from "./components/footer/footer.jsx";
 import Hero from "./components/Hero/Hero.jsx";
