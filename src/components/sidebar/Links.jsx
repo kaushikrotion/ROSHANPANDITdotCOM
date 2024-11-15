@@ -26,15 +26,15 @@ const variants = {
     }
   }
   const items = [
-    "HOMEPAGE",
-    "PROJECTS",
-    "PORTFOLIO",
-    "CONTACTS",
+    "homepage",
+    "portfolio",
+    "blog",
+    "contacts",
   ]
   return (
     <motion.div className='links' variants={variants}>
         {items.map(item =>
-          <motion.a href={`#${item}`} key={item} variants={itemsVariants} whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.95 }}>{item}</motion.a>
+          <motion.a href={item == "homepage" ? "/" : `/${item}`} key={item} variants={itemsVariants} whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.95 }}>{item.toUpperCase()}</motion.a>
         )}
     </motion.div>
   )

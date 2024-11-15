@@ -1,0 +1,23 @@
+.banner-container{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+
+    .banner-image{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: absolute;;
+    }
+
+    .banner-title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5rem;
+        font-weight: bold;
+        object-fit: contain;
+        
+    }
+}

@@ -1,0 +1,31 @@
+[
+    {
+        "date": "2024 October 19",
+        "category": "Landscape",
+        "title": "How to Learn React",
+        "blogPageImage": "/Images/Potrait.jpg",
+        "content1title": "Introduction",
+        "content1": "React is a JavaScript library for building user interfaces.",
+        "content2": "React is popular due to its component-based architecture.",
+        "content3title": "Why React?",
+        "content3": "React has a great ecosystem of libraries and tools.",
+        "content4images": [
+            "/Images/MilkyWay-Michigan.jpg",
+            "/Images/MilkyWay-Michigan.jpg"
+        ],
+        "content5": "Learn how to build dynamic web applications with React!"
+    },
+    {
+        "date": "2024 October 19",
+        "category": "Landscape",
+        "title": "Mastering JavaScript",
+        "content1title": "What is JavaScript?",
+        "content1": "JavaScript is a versatile programming language.",
+        "content2": "JavaScript can be used for both frontend and backend development.",
+        "content3title": "JS in Action",
+        "content3": "JavaScript is widely used in web browsers.",
+        "content4images": [
+            "/Images/MilkyWay-Michigan.jpg"
+        ]
+    }
+]

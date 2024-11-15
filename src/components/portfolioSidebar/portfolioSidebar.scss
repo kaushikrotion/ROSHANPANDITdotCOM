@@ -1,0 +1,26 @@
+.portfolio-sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    z-index: 10;
+
+    .portfolio-sidebar-container-item {
+        color: #777;
+        cursor: pointer;
+        margin: 10px 0;
+        padding: 10px;
+        transition: color 0.3s ease;
+    }
+
+    .portfolio-sidebar-container-item.active {
+        color: #fff;
+        font-weight: bold;
+    }
+}

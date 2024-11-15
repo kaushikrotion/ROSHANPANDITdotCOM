@@ -5,10 +5,10 @@ import {motion} from "framer-motion";
 
 function Navbar() {
   const items = [
-    "HOMEPAGE",
-    "PROJECTS",
-    "PORTFOLIO",
-    "CONTACTS",
+    "homepage",
+    "portfolio",
+    "blog",
+    "contacts",
   ]
   return (
     <div>
@@ -32,7 +32,7 @@ function Navbar() {
           />
           <div className="navbar-links">
           {items.map(item =>
-            <motion.a href={`/${item}`} key={item} whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.95 }}>{item}</motion.a>
+            <motion.a href={item == "homepage" ? "/" : `/${item}`} key={item} whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.95 }}>{item.toUpperCase()}</motion.a>
           )}
           </div>
       </div>

@@ -1,27 +1,23 @@
 import "./App.scss"
-import BlogUpdates from "./components/blogupdates/blogupdates.jsx";
-import Footer from "./components/footer/footer.jsx";
-import Hero from "./components/Hero/Hero.jsx";
-import Navbar from "./components/navbar/Navbar.jsx"
-import PortfolioHighlights from "./components/portfoliohighlights/PortfolioHighlights.jsx";
-
+import React ,{ Suspense, lazy } from "react";
+import { Routes, Route } from 'react-router-dom';
+import Homepage from "./pages/Homepage/Homepage";
+import Portfolio from "./pages/Portfolio/Portfolio";
+import Blog from "./pages/Blog/Blog";
+import Contacts from "./pages/Contacts/Contacts";
+import GenreTemplate from "./components/portfolioGenraTemplate/genreTemplate";
 
 const App = () => {
   return <div>
-    <section>
-      <Navbar />
-      <Hero />
-    </section>
-    <section>
-      <PortfolioHighlights/>
-      <BlogUpdates />
-    </section>
-    <footer>
-      <Footer/>
-    </footer>
-
-    {/* <Test />
-    <Test /> */}
+    <Suspense fallback={<div>Loading...</div>}>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/Portfolio" element={<Portfolio />} />
+        <Route exact path="/portfolio/:genre" element = {<GenreTemplate />} />
+        <Route path="/Blog" element={<Blog />} />
+        <Route path="/Contacts" element={<Contacts />} />
+      </Routes>
+    </Suspense>
   </div>;
 };
 

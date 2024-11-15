@@ -1,0 +1,14 @@
+.images-wrapper {
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    width: 50%;
+    transition: transform 0.3s ease-in-out;
+
+    .scrolling-photo {
+        min-width: 100%; // Ensure each image takes up full container width
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+}

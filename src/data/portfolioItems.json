@@ -1,0 +1,27 @@
+[
+    {
+        "id" : 0,
+        "title": "Landscape",
+        "path": "/portfolio/landscape",
+        "images": [
+            "/Images/NiagraFall-AmericanFall.jpg",
+            "/Images/MilkyWay-Michigan.jpg",
+            "/Images/Wedding.jpg",
+            "/Images/Potrait.jpg",
+            "/Images/Potrait.jpg",
+            "/Images/Potrait.jpg"]
+    },
+    {
+        "id": 1,
+        "title": "Wedding",
+        "path": "/portfolio/wedding",
+        "images": [
+            "/Images/Potrait.jpg",
+            "/Images/Potrait.jpg",
+            "/Images/Potrait.jpg",
+            "/Images/Wedding.jpg",
+            "/Images/Potrait.jpg",
+            "/Images/Potrait.jpg"
+        ]
+    }
+]

@@ -1,0 +1,71 @@
+[
+    {
+        "genra":"Landscape",
+        "navbarPic":"/Images/MilkyWay-Michigan.jpg",
+        "images":[
+            {
+                "category":"Forest", 
+                "imagelink": "/Images/Wedding.jpg",
+                "imageOrientation": "landscape"
+            },
+            {
+                "category": "Mountains",
+                "imagelink": "/Images/Potrait.jpg",
+                "imageOrientation": "potrait"
+            },
+            {
+                "category": "Forest",
+                "imagelink": "/Images/Wedding.jpg",
+                "imageOrientation": "landscape"
+            },
+            {
+                "category": "Mountains",
+                "imagelink": "/Images/Potrait.jpg",
+                "imageOrientation": "potrait"
+            },
+            {
+                "category": "Forest",
+                "imagelink": "/Images/Wedding.jpg",
+                "imageOrientation": "landscape"
+            },
+            {
+                "category": "Mountains",
+                "imagelink": "/Images/Potrait.jpg",
+                "imageOrientation": "potrait"
+            },
+            {
+                "category": "Mountains",
+                "imagelink": "/Images/Potrait.jpg",
+                "imageOrientation": "potrait"
+            },
+            {
+                "category": "Forest",
+                "imagelink": "/Images/Wedding.jpg",
+                "imageOrientation": "landscape"
+            },
+            {
+                "category": "Mountains",
+                "imagelink": "/Images/Potrait.jpg",
+                "imageOrientation": "potrait"
+            }
+
+        ]
+    },
+
+    {
+        "genra": "Astrophotography",
+        "navbarPic": "/Images/MilkyWay-Michigan.jpg",
+        "images": [
+            {
+                "category": "Milkyway",
+                "imagelink": "/Images/MilkyWay-Michigan.jpg",
+                "imageOrientation": "landscape"
+            },
+            {
+                "category": "Deepsky",
+                "imagelink": "/Images/Potrait.jpg",
+                "imageOrientation": "potrait"
+            }
+        ]
+    }
+]
